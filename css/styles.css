@@ -441,6 +441,10 @@ footer .phone {
     margin-bottom: 1rem;
   }
 
+  .socials i:hover {
+    color: #ff52bf;
+  }
+
   .copyright {
     display: block;
     margin-left: 3rem;
