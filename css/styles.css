@@ -272,6 +272,8 @@ footer .phone {
 @media screen and (max-width: 1440px) {
   .bgHero {
     background: url("/images/bg-hero-mobile.svg");
+    background-color: #ebfbff;
+    margin-bottom: 2rem;
   }
 
   header {
