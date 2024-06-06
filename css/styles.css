@@ -460,20 +460,17 @@ footer .phone {
     width: 100%;
   }
   .get-started-container div{
-    /* background-color: red; */
     width: 100%;
   }
 
   .get-started-container button {
    
-    /* margin-right: 7rem; */
     width: 75%;
     text-align: center;
     margin: 0rem 2rem 1rem 2rem;
 
     padding: 15px 40px;
     font-size: 10px;
-    /* background-color: #808d99; */
   }
 
   footer {
@@ -507,7 +504,7 @@ footer .phone {
 
   .socials {
     width: 90%;
-    margin-left: 4rem;
+    margin-left: 7rem;
   }
 
   .copyright {
