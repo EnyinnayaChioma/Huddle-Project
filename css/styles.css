@@ -436,7 +436,7 @@ footer .phone {
 
   .second-section p {
     width: 100%;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
   }
 
@@ -449,14 +449,15 @@ footer .phone {
   .get-started-container {
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 97%;
     height: 150px;
     padding: 7px;
   }
 
   .get-started-container h3 {
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 2rem;
+    width: 100%;
   }
   .get-started-container div{
     /* background-color: red; */
