@@ -1,5 +1,4 @@
 /* font */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -16,14 +15,22 @@
   text-decoration: none;
 }
 
+/* general styling for buttons */
+button{
+  font-family: "Open Sans", sans-serif;
+  font-size: 700;
+  cursor: pointer;
+ 
+}
+
 body {
   overflow-x: hidden !important;
 }
 /* for background for the hero page */
 .bgHero {
-  background: url("/images/bg-hero-desktop.svg");
+  background: url("/images/bg-images/bg-hero-desktop.svg");
   background-color: #ebfbff;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 header {
@@ -41,23 +48,27 @@ header nav {
 }
 
 header .logo {
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
   width: 25%;
+}
+
+header .logo img{
+  width: 50%;
 }
 
 header button {
   margin: 2rem 0;
   background-color: #fff;
-  padding: 15px 30px;
-  box-shadow: 2px 2px 2px #808d99;
+  padding: 15px 55px;
+  box-shadow: 2px 2px 2px #d3dce6;
   border: none;
   border-radius: 50px;
   font-weight: 700;
 }
 
 header button:hover {
-    background-color: #f3f1f1;
-
+    background-color: #eeeded;
+    transition: all 0.5s ease-out allow-discrete;
 }
 
 .bgHero .hero-details {
@@ -70,34 +81,40 @@ header button:hover {
 
 .bgHero .hero-writeup {
   margin-top: 10rem;
-  width: 60%;
+  width: 50%;
 }
 
 .bgHero h2 {
-  width: 70%;
-  /* line-height: 1.6; */
+  width: 65%;
   margin-bottom: 2rem;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
 
 .bgHero p {
   font-size: 18px;
-  width: 70%;
+  width: 80%;
   margin-bottom: 2.5rem;
   color: #00252e;
 }
 
+
 .bgHero .hero-img {
   margin-top: 2rem;
+  /* margin-left: 2rem; */
+}
+
+.bgHero .hero-img img{
+  width: 97%;
+  margin-top: 2rem;
+
 }
 
 .bgHero .hero-writeup button {
-  padding: 15px 30px;
   background-color: #ff52bf;
   color: #ebfbff;
-  padding: 15px 30px;
+  padding: 20px 55px;
   border: none;
   border-radius: 50px;
   font-weight: 700;
@@ -105,6 +122,7 @@ header button:hover {
 
 .bgHero .hero-writeup button:hover {
   background-color: #f57ac8;
+  transition: all 0.8s ease-out allow-discrete;
 }
 
 .second-section {
@@ -120,11 +138,11 @@ header button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 5px 5px 15px #808d99;
-  border-radius: 10px;
+  box-shadow: 15px 10px 20px 4px #d6d9dd;
+  border-radius: 20px;
   width: 90%;
-  height: 600px;
-  padding: 30px;
+  height: 500px;
+  padding: 80px;
   margin: 0 auto;
 }
 
@@ -137,12 +155,13 @@ header button:hover {
 }
 
 .second-section .writeup {
-  width: 70%;
+  width: 65%;
 }
-
+/* 
 .second-section .flowing-conversation .writeup {
-  margin-left: 7rem;
-}
+  margin-left: 15rem;
+} */
+
 
 .second-section h4 {
   font-weight: 700;
@@ -153,13 +172,23 @@ header button:hover {
 }
 
 .second-section p {
+  font-size: 18px;
   font-weight: 400;
-  width: 70%;
+  width: 60%;
   color: #808d99;
 }
 
+.second-section .flowing-conversation .writeup {
+margin-left: 30rem;
+}
+
+.second-section .flowing-conversation .writeup p{
+width: 100%;
+  
+}
+
 .second-section img {
-  height: 500px;
+  height: 350px;
 }
 
 .third-section {
@@ -177,36 +206,38 @@ header button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px -4px 6px 0 #808d99;
+  box-shadow: 0px -4px 6px 0 #d9dee4;
   border-radius: 10px;
-  width: 25%;
-  height: 160px;
+  width: 45%;
+  height: 240px;
   padding: 50px;
   background-color: #fff;
-
   font-family: "Open Sans", sans-serif;
 }
 
 .get-started-container h3 {
   width: 100%;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 1rem;
 }
 
 .get-started-container button {
   background-color: #ff52bf;
   color: #ebfbff;
-  padding: 15px 35px;
-  box-shadow: 2px 2px 2px #808d99;
+  padding: 28px 85px;
+  box-shadow: 5px 3px 7px  #d6d9dd;
   border: none;
   border-radius: 50px;
   margin: 1rem 4rem;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .get-started-container button:hover {
   background-color: #f57ac8;
+  transition: all 0.8s ease-out allow-discrete;
+
 }
 
 /* footer */
@@ -216,10 +247,11 @@ footer {
   background-color: #00252e;
   font-weight: 400;
   padding: 40px;
+  font-size: 18px;
 }
 
 footer .footer-logo {
-  margin: 2rem 0 0 10rem;
+  margin: 6rem 0 0 10rem;
 }
 
 footer .footer-container {
@@ -231,6 +263,7 @@ footer .footer-container {
 footer .footer-container p {
   color: #ebfbff;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 footer .footer-container span {
@@ -239,7 +272,7 @@ footer .footer-container span {
 }
 
 footer .contact {
-  width: 20%;
+  width: 23%;
 }
 
 footer .location {
@@ -253,14 +286,18 @@ footer .phone {
 .socials i {
   color: #ebfbff;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .socials i:hover {
   color: #ff52bf;
+  transition: all 0.7s ease-out allow-discrete;
+
 }
 
 .copyright p {
   color: #ebfbff;
+  font-size: 14px;
 }
 
 .copyright {
@@ -268,10 +305,13 @@ footer .phone {
   justify-content: flex-end;
   margin: 0 3rem;
 }
+
+
+
 /* media query */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 832px) {
   .bgHero {
-    background: url("/images/bg-hero-mobile.svg");
+    background: url("/images/bg-images/bg-hero-mobile.svg");
     background-color: #ebfbff;
     margin-bottom: 2rem;
   }
@@ -279,24 +319,28 @@ footer .phone {
   header {
     padding: 0 12px;
   }
+
   header nav {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
   }
   
     header .logo{
-        width: 27%;
+        width: 50%;
     }
 
   header .logo img {
-    width: 100%;
+    width: 90%;
   }
 
   header button {
-    box-shadow: 1px 1px 1px #808d99;
+    /* box-shadow: 1px 1px 1px #808d99; */
     font-size: 14px;
-    padding: 2px 8px;
-    width: 30%;
+    padding: 4px 10px;
+    margin-top: 3rem;
+    margin-left: 3.5rem;
+    /* margin: 0; */
+    width: 50%;
   }
 
   .bgHero .hero-details {
@@ -315,7 +359,7 @@ footer .phone {
 
   .bgHero h2 {
     width: 100%;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
   }
 
@@ -340,6 +384,10 @@ footer .phone {
     margin: 4rem auto;
   }
 
+  .second-section{
+    margin-bottom: 0;
+  }
+
   .second-section .grow-together,
   .second-section .flowing-conversation,
   .second-section .your-user {
@@ -349,7 +397,7 @@ footer .phone {
     align-items: center;
     box-shadow: 5px 5px 15px #808d99;
     border-radius: 10px;
-    width: 90%;
+    width: 95%;
     height: 400px;
     padding: 15px;
   }
@@ -358,6 +406,7 @@ footer .phone {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
   }
 
   .second-section .writeup {
@@ -380,13 +429,14 @@ footer .phone {
   .second-section h4 {
     font-weight: 700;
     margin-bottom: 0.5rem;
-    font-size: 18px;
+    font-size: 16px;
+    margin-top: 2rem;
     text-align: center;
   }
 
   .second-section p {
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
   }
 
@@ -394,22 +444,39 @@ footer .phone {
     margin-left: 0rem;
   }
 
-  .third-section {
-    width: 100vw;
-  }
+  
 
   .get-started-container {
-    width: 85%;
-    height: 160px;
-    padding: 2px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 150px;
+    padding: 7px;
   }
 
   .get-started-container h3 {
     font-size: 14px;
+    margin-top: 2rem;
+  }
+  .get-started-container div{
+    /* background-color: red; */
+    width: 100%;
   }
 
   .get-started-container button {
-    padding: 15px 30px;
+   
+    /* margin-right: 7rem; */
+    width: 75%;
+    text-align: center;
+    margin: 0rem 2rem 1rem 2rem;
+
+    padding: 15px 40px;
+    font-size: 10px;
+    /* background-color: #808d99; */
+  }
+
+  footer {
+    padding: 10px 10px 10px 3px;
   }
 
   .footer-container {
@@ -417,7 +484,8 @@ footer .phone {
   }
 
   footer .footer-logo {
-    margin: 2rem 0 0 2rem;
+    width: 70%;
+    margin: 5rem 0 0 2rem;
   }
 
   footer .footer-container p {
@@ -425,6 +493,7 @@ footer .phone {
   }
 
   footer .footer-container {
+    width: 100vw;
     display: block;
     padding-top: 2rem;
     margin-left: 2rem;
@@ -432,23 +501,23 @@ footer .phone {
   }
 
   footer .contact {
-    width: 95%;
+    width: 80%;
   }
 
   .socials {
     width: 90%;
-    margin-left: 6rem;
-    margin-bottom: 1rem;
-  }
-
-  .socials i:hover {
-    color: #ff52bf;
+    margin-left: 4rem;
   }
 
   .copyright {
-    display: block;
-    margin-left: 3rem;
-    width: 90%;
-    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 3px;
+    width: 100%;
+  }
+
+  .copyright p{
+    font-size: 12px;  
   }
 }
